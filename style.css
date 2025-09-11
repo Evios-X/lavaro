@@ -206,6 +206,7 @@ header a:hover {
   background: linear-gradient(135deg, #293462, #f24c4c);
   color: #fff;
   padding: 4rem 2rem;
+  scroll-margin-top: 80px;
   border-radius: 20px;
   margin: 3rem 2rem;
 }
@@ -284,3 +285,4 @@ footer {
         flex: 1 1 200px;
     }
 }
+
