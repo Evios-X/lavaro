@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavaro - Pukis Brownies</title>
+  <link rel="shortcut icon" href="lavaro.png" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Lavaro</h1>
+    <p>Pukis Brownies - Manis, Lembut, dan Bikin Nagih</p>
+    <a href="#produk">Lihat Produk</a>
+  </header>
+
+  <section id="produk" class="produk">
+  <div class="produk-img">
+    <img src="kue.png" alt="Pukis Brownies">
+  </div>
+  <div class="produk-text">
+    <h2>Pukis Brownies</h2>
+    <p>
+      Perpaduan unik antara kue pukis tradisional dengan brownies modern.
+      Dibuat dengan bahan pilihan dan resep rahasia Lavaro, menghasilkan tekstur lembut dan rasa cokelat premium yang istimewa.
+    </p>
+    <a href="#contact"><button class="btn-hk">Hubungi kami</button></a>
+    
+  </div>
+</section>
+
+  <section id="topping" class="topping">
+    <h2>Pilihan Topping</h2>
+    <div class="topping-grid">
+      <div class="card">
+        <img src="cokelat-pukis.png" alt="Cokelat">
+        <h3>Cokelat Leleh</h3>
+      </div>
+      <div class="card">
+        <img src="keju-pukis.png" alt="Keju">
+        <h3>Keju Premium</h3>
+      </div>
+      <div class="card">
+        <img src="kacang-pukis.png" alt="Kacang">
+        <h3>Kacang Gurih</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="profil" class="profil">
+    <div>
+      <h2>Tim Lavaro</h2>
+      <p>
+        Kami adalah kelompok <b>pervektsmk</b> yang berkomitmen menghadirkan inovasi makanan tradisional dengan sentuhan modern. 
+        Bersama, kami menciptakan Pukis Brownies yang berbeda dari yang lain.
+      </p>
+    </div>
+    <img src="tim.png" alt="Tim Lavaro">
+  </section>
+
+  <section id="location" class="location">
+    <h2>Lokasi</h2>
+    <p>Kami menerima pesanan hanya di kota Pamekasan</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63340.02255579272!2d113.43178330900948!3d-7.1547145540113695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77e09e1df0443%3A0x220d11dc60ada51e!2sPamekasan%2C%20Kec.%20Pamekasan%2C%20Kabupaten%20Pamekasan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1757582690639!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami</h2>
+    <p>Pesan sekarang atau hubungi kami melalui sosial media:</p>
+    <a href="https://wa.me/6285955267315" target="_blank">WhatsApp</a>
+    <a href="mailto:nazriainurrahman@gmail.com">Email</a>
+    <a href="https://www.instagram.com/lavarobrown" target="_blank">Instagram</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Lavaro - Semua Hak Dilindungi</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.produk, .profil, .topping');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add('show');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
