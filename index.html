@@ -24,10 +24,7 @@
       Perpaduan unik antara kue pukis tradisional dengan brownies modern.
       Dibuat dengan bahan pilihan dan resep rahasia Lavaro, menghasilkan tekstur lembut dan rasa cokelat premium yang istimewa.
     </p>
-    <button class="btn-hk" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth', block:'start'})">
-      Hubungi kami
-    </button>
-    <a class="btn-hk" href="#contact">Hubungi Kami</a>
+    <a class="btn-hk" href="#contact" style="text-decoration: none;">Hubungi Kami</a>
   </div>
 </section>
 
@@ -88,7 +85,16 @@
         }
       });
     });
+
+    document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#contact').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
   </script>
 </body>
 </html>
+
 
