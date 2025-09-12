@@ -76,25 +76,18 @@
   </footer>
 
   <script>
-    const sections = document.querySelectorAll('.produk, .profil, .topping');
-    window.addEventListener('scroll', () => {
-      sections.forEach(sec => {
-        const rect = sec.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          sec.classList.add('show');
-        }
-      });
+  const sections = document.querySelectorAll('.produk, .profil, .topping');
+  window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        sec.classList.add('show');
+      }
     });
-
-    document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  document.querySelector('#contact').scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
   });
-});
   </script>
 </body>
 </html>
+
 
 
