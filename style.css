@@ -7,11 +7,16 @@
 
 html, body {
   height: 100%;
-  scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: auto;
   background: #fafafa;
   color: #333;
   line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 header {
@@ -109,6 +114,8 @@ header a:hover {
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease;
+  font-size: .9rem;
+  text-decoration: none;
 }
 
 .produk-text .btn-hk:hover {
@@ -206,9 +213,12 @@ header a:hover {
   background: linear-gradient(135deg, #293462, #f24c4c);
   color: #fff;
   padding: 4rem 2rem;
-  scroll-margin-top: 80px;
   border-radius: 20px;
-  margin: 3rem 2rem;
+  margin: 2rem 1rem;
+}
+
+#contact {
+  scroll-margin-top: 20px;
 }
 
 .contact h2 {
@@ -285,4 +295,3 @@ footer {
         flex: 1 1 200px;
     }
 }
-
