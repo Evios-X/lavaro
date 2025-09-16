@@ -24,7 +24,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #6e45e2, #88d3ce);
+  /* background: linear-gradient(to right, #6e45e2, #88d3ce); */
+  background: linear-gradient(to right, #293462, #f24c4c);
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
@@ -85,7 +86,8 @@ header a:hover {
   max-height: 350px;
   border-radius: 15px;
   object-fit: cover;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  /* box-shadow: 0 5px 20px rgba(0,0,0,0.15); */
+  box-shadow: 0 5px 20px rgba(255, 0, 0, 0.15);
 }
 
 .produk-text {
@@ -150,7 +152,8 @@ header a:hover {
   background: #fff;
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
+  box-shadow: 0 5px 20px rgba(255, 0, 0, 0.15);
   transition: transform 0.3s;
 }
 
@@ -192,7 +195,8 @@ header a:hover {
   height: auto;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  /* box-shadow: 0 5px 20px rgba(0,0,0,0.2); */
+  box-shadow: 0 5px 20px rgba(255, 0, 0, 0.15);
 }
 
 .location {
